@@ -1,0 +1,25 @@
+# This is Git's per-user configuration file. 
+[user] 
+# Please adapt and uncomment the following lines: 
+        name = karlWinkler 
+        email = karlw200@gmail.com 
+[alias] 
+        lg = 'log' 
+        undo = reset --soft HEAD~ 
+        br = branch 
+        co = checkout 
+        ci = commit -m 
+        st = status 
+        cp = cherry-pick 
+        d = diff 
+        staged = diff --staged 
+        reset = reset --hard 
+        clean = clean -fxd 
+        amend = commit --amend 
+        unstage = reset HEAD~ -- 
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cd) %C(bold blue)<%an>%Creset' --abbrev --date=short 
+        stash-unapply = !git stash show -p | git apply -R 
+        last = log -1 HEAD 
+ 
+[core] 
+        editor = vim 
